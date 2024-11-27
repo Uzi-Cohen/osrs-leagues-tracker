@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+</head>
+<body>
+    <h1 class="osrs-title">League Tasks Checklist</h1>
+
+    
+    <!-- Tasks are grouped by category -->
+    <div id="task-list">
+    <div class="task-category">Initial Setup</div>
+    <div class="task"><input type="checkbox" id="task1"><label for="task1">Complete league tutorial</label></div>
+    <div class="task"><input type="checkbox" id="task2"><label for="task2">Open the league menu</label></div>
+    <div class="task"><input type="checkbox" id="task3"><label for="task3">Pickpocket man to level 5</label></div>
+    <div class="task"><input type="checkbox" id="task4"><label for="task4">Talk to Hans</label></div>
+    <div class="task"><input type="checkbox" id="task5"><label for="task5">Use Northern Lumbridge castle staircase, then back down</label></div>
+    <div class="task"><input type="checkbox" id="task6"><label for="task6">Go down the ladder in the Cook's room and change attack style to kick</label></div>
+    <div class="task"><input type="checkbox" id="task7"><label for="task7">Defeat spider by kicking</label></div>
+    <div class="task"><input type="checkbox" id="task8"><label for="task8">Go back upstairs and defeat rat outside of the castle</label></div>
+    <div class="task"><input type="checkbox" id="task9"><label for="task9">Turn on Thick Skin prayer</label></div>
+
+    <div class="task-category">Lumbridge and Nearby</div>
+    <div class="task"><input type="checkbox" id="task10"><label for="task10">Chop 2 trees west of the castle</label></div>
+    <div class="task"><input type="checkbox" id="task11"><label for="task11">Burn the logs</label></div>
+    <div class="task"><input type="checkbox" id="task12"><label for="task12">Sell items at the general store</label></div>
+    <div class="task"><input type="checkbox" id="task13"><label for="task13">Buy a knife at the general store</label></div>
+    <div class="task"><input type="checkbox" id="task14"><label for="task14">Buy 1 beer at the bar</label></div>
+    <div class="task"><input type="checkbox" id="task15"><label for="task15">Fletch logs into arrow shafts and drop shafts</label></div>
+    <div class="task"><input type="checkbox" id="task16"><label for="task16">Pick 3 onions at Fred's farm and eat one</label></div>
+    <div class="task"><input type="checkbox" id="task17"><label for="task17">Defeat chicken with fists and pick up egg</label></div>
+    <div class="task"><input type="checkbox" id="task18"><label for="task18">Pick up and bury bones</label></div>
+    <div class="task"><input type="checkbox" id="task19"><label for="task19">Pick 1 wheat and make flour in the windmill</label></div>
+    <div class="task"><input type="checkbox" id="task20"><label for="task20">Milk the dairy cow at the cow pen</label></div>
+    <div class="task"><input type="checkbox" id="task21"><label for="task21">Search haystack west of the wheat field for a needle</label></div>
+
+    <div class="task-category">Draynor Village</div>
+    <div class="task"><input type="checkbox" id="task22"><label for="task22">Insult Aggie</label></div>
+    <div class="task"><input type="checkbox" id="task23"><label for="task23">Complete 10 laps of Draynor rooftop course</label></div>
+    <div class="task"><input type="checkbox" id="task24"><label for="task24">Start Vampire Slayer and grab garlic upstairs</label></div>
+
+    <div class="task-category">Banking and Supplies</div>
+    <div class="task"><input type="checkbox" id="task25"><label for="task25">Deposit all items except coins, mind/air runes, and beer</label></div>
+    <div class="task"><input type="checkbox" id="task26"><label for="task26">Buy 25 wines and deposit 10</label></div>
+    <div class="task"><input type="checkbox" id="task27"><label for="task27">Buy 4 barley seeds</label></div>
+
+    <div class="task-category">Miscellaneous Tasks</div>
+    <div class="task"><input type="checkbox" id="task28"><label for="task28">Pray at the altar in Lumbridge</label></div>
+    <div class="task"><input type="checkbox" id="task29"><label for="task29">Talk to Bob for a quest</label></div>
+    <div class="task"><input type="checkbox" id="task30"><label for="task30">Dance emote at the graveyard</label></div>
+    <div class="task"><input type="checkbox" id="task31"><label for="task31">Enter Death's lair and leave</label></div>
+    <div class="task"><input type="checkbox" id="task32"><label for="task32">Talk to Count Check and teleport to Stronghold</label></div>
+
+    <div class="task-category">Stronghold of Security</div>
+    <div class="task"><input type="checkbox" id="task33"><label for="task33">Complete the Stronghold of Security</label></div>
+    <div class="task"><input type="checkbox" id="task34"><label for="task34">Defeat a goblin after the first door</label></div>
+    <div class="task"><input type="checkbox" id="task35"><label for="task35">Drink beer in the long hall of Barbarian Village</label></div>
+
+    <div class="task-category">Karamja</div>
+    <div class="task"><input type="checkbox" id="task36"><label for="task36">Teleport to Karamja using the league menu</label></div>
+    <div class="task"><input type="checkbox" id="task37"><label for="task37">Pick pineapple near house portal</label></div>
+    <div class="task"><input type="checkbox" id="task38"><label for="task38">Buy 1 banana and eat it</label></div>
+    <div class="task"><input type="checkbox" id="task39"><label for="task39">Take Hajedy's cart to Shilo Village</label></div>
+
+    <div class="task-category">Shilo Village</div>
+    <div class="task"><input type="checkbox" id="task40"><label for="task40">Deposit all items except coins and tinderbox</label></div>
+    <div class="task"><input type="checkbox" id="task41"><label for="task41">Buy a torch, light it, and drop it</label></div>
+    <div class="task"><input type="checkbox" id="task42"><label for="task42">Buy 35 bronze bars</label></div>
+    <div class="task"><input type="checkbox" id="task43"><label for="task43">Complete tasks from Kaleb</label></div>
+    <div class="task"><input type="checkbox" id="task44"><label for="task44">Withdraw poon and coins</label></div>
+          <div class="task-category">Combat and Fishing</div>
+    <div class="task"><input type="checkbox" id="task45"><label for="task45">Defeat a moss giant with FIRE strike</label></div>
+    <div class="task"><input type="checkbox" id="task46"><label for="task46">Defeat a lesser demon with WATER bolt</label></div>
+    <div class="task"><input type="checkbox" id="task47"><label for="task47">Defeat TzHaar-Ket or TzHaar-Xil using a Bolt spell</label></div>
+    <div class="task"><input type="checkbox" id="task48"><label for="task48">Fish shrimp to level 5</label></div>
+    <div class="task"><input type="checkbox" id="task49"><label for="task49">Bait fish to level 25</label></div>
+    <div class="task"><input type="checkbox" id="task50"><label for="task50">Cook raw beef and burn it on purpose</label></div>
+
+    <div class="task-category">Skill Leveling</div>
+    <div class="task"><input type="checkbox" id="task51"><label for="task51">Chop and burn logs to 15 Firemaking</label></div>
+    <div class="task"><input type="checkbox" id="task52"><label for="task52">Create 15 planks and oak planks</label></div>
+    <div class="task"><input type="checkbox" id="task53"><label for="task53">Smith bronze and iron items to level 16 Smithing</label></div>
+
+    <div class="task-category">Vampire Slayer</div>
+    <div class="task"><input type="checkbox" id="task54"><label for="task54">Continue Vampire Slayer until you get the stake</label></div>
+    <div class="task"><input type="checkbox" id="task55"><label for="task55">Defeat Count Draynor</label></div>
+
+    <div class="task-category">Clue Scroll Tasks</div>
+    <div class="task"><input type="checkbox" id="task56"><label for="task56">Build beginner stash units (6 planks, 30 nails)</label></div>
+    <div class="task"><input type="checkbox" id="task57"><label for="task57">Build easy stash units (26 planks, 130 nails)</label></div>
+    <div class="task"><input type="checkbox" id="task58"><label for="task58">Build medium stash units (14 oak planks, 70 nails)</label></div>
+
+    <div class="task-category">Other Milestones</div>
+    <div class="task"><input type="checkbox" id="task59"><label for="task59">Obtain a cat from Gertrude and shoo it away</label></div>
+    <div class="task"><input type="checkbox" id="task60"><label for="task60">Shear 24 sheep and spin 4 balls of wool</label></div>
+    <div class="task"><input type="checkbox" id="task61"><label for="task61">Unlock the clue compass relic</label></div>
+
+    <div class="task-category">Advanced Combat</div>
+    <div class="task"><input type="checkbox" id="task62"><label for="task62">Kill 10 blue dragons and bury bones for 23 prayer</label></div>
+    <div class="task"><input type="checkbox" id="task63"><label for="task63">Defeat goblins for chef's hat</label></div>
+    <div class="task"><input type="checkbox" id="task64"><label for="task64">Enter the cooking guild</label></div>
+
+    <div class="task-category">Fishing and Cooking</div>
+    <div class="task"><input type="checkbox" id="task65"><label for="task65">Fish 50 salmon</label></div>
+    <div class="task"><input type="checkbox" id="task66"><label for="task66">Fish 100 lobsters</label></div>
+    <div class="task"><input type="checkbox" id="task67"><label for="task67">Fish 50 swordfish</label></div>
+    <div class="task"><input type="checkbox" id="task68"><label for="task68">Cook all raw lobsters</label></div>
+
+    <div class="task-category">Agility</div>
+    <div class="task"><input type="checkbox" id="task69"><label for="task69">Complete Brimhaven agility arena and collect 10 loot tickets</label></div>
+
+    <div class="task-category">Hunter</div>
+    <div class="task"><input type="checkbox" id="task70"><label for="task70">Catch 50 baby, young, or gourmet implings</label></div>
+
+    <div class="task-category">Forestry and Woodcutting</div>
+    <div class="task"><input type="checkbox" id="task71"><label for="task71">Cut regular trees until 1000 arrow shafts</label></div>
+    <div class="task"><input type="checkbox" id="task72"><label for="task72">Fletch and burn willow logs</label></div>
+
+    <div class="task-category">Mining and Smithing</div>
+    <div class="task"><input type="checkbox" id="task73"><label for="task73">Mine 50 iron ore</label></div>
+    <div class="task"><input type="checkbox" id="task74"><label for="task74">Smelt iron and steel bars</label></div>
+    <div class="task"><input type="checkbox" id="task75"><label for="task75">Smith bronze platebodies to level 33 Smithing</label></div>
+
+    <div class="task-category">Construction</div>
+    <div class="task"><input type="checkbox" id="task76"><label for="task76">Complete novice mahogany home contract</label></div>
+    <div class="task"><input type="checkbox" id="task77"><label for="task77">Build kitchen and oak larder in POH</label></div>
+    <div class="task-category">Final Combat Tasks</div>
+    <div class="task"><input type="checkbox" id="task78"><label for="task78">Defeat goblins for chef's hat</label></div>
+    <div class="task"><input type="checkbox" id="task79"><label for="task79">Kill 3 chickens in 6 seconds with rune mace on strength</label></div>
+    <div class="task"><input type="checkbox" id="task80"><label for="task80">Defeat a greater demon in Brimhaven dungeon</label></div>
+    <div class="task"><input type="checkbox" id="task81"><label for="task81">Kill 6 rabbits in the enchanted valley</label></div>
+    <div class="task"><input type="checkbox" id="task82"><label for="task82">Defeat 10 blue dragons and bury their bones</label></div>
+
+    <div class="task-category">Clue Scroll Completion</div>
+    <div class="task"><input type="checkbox" id="task83"><label for="task83">Use clue compass to Varrock castle roof</label></div>
+    <div class="task"><input type="checkbox" id="task84"><label for="task84">Use clue compass to Shilo bank</label></div>
+    <div class="task"><input type="checkbox" id="task85"><label for="task85">Use clue compass to Tai Bwo Wannai and fish karambwanji</label></div>
+    <div class="task"><input type="checkbox" id="task86"><label for="task86">Use clue compass to Barb Village and defeat a barbarian</label></div>
+    <div class="task"><input type="checkbox" id="task87"><label for="task87">Use clue compass to Digsite and dig for a belt buckle</label></div>
+    <div class="task"><input type="checkbox" id="task88"><label for="task88">Complete Vampire Slayer and use clue compass to Varrock clothing shop</label></div>
+
+    <div class="task-category">Forestry</div>
+    <div class="task"><input type="checkbox" id="task89"><label for="task89">Claim forestry backpack</label></div>
+    <div class="task"><input type="checkbox" id="task90"><label for="task90">Cut regular trees for forestry events</label></div>
+    <div class="task"><input type="checkbox" id="task91"><label for="task91">Cut willow logs and fletch shortbows</label></div>
+
+    <div class="task-category">Fishing and Cooking (Advanced)</div>
+    <div class="task"><input type="checkbox" id="task92"><label for="task92">Fish 50 salmon</label></div>
+    <div class="task"><input type="checkbox" id="task93"><label for="task93">Fish 100 lobsters</label></div>
+    <div class="task"><input type="checkbox" id="task94"><label for="task94">Fish 50 swordfish</label></div>
+    <div class="task"><input type="checkbox" id="task95"><label for="task95">Cook all lobsters in the bank</label></div>
+
+    <div class="task-category">Agility Milestone</div>
+    <div class="task"><input type="checkbox" id="task96"><label for="task96">Complete 10 laps of Varrock rooftop course</label></div>
+
+    <div class="task-category">Mining and Crafting</div>
+    <div class="task"><input type="checkbox" id="task97"><label for="task97">Mine 25 pure essence in the essence mine</label></div>
+    <div class="task"><input type="checkbox" id="task98"><label for="task98">Smelt bronze bars and craft bronze knives</label></div>
+    <div class="task"><input type="checkbox" id="task99"><label for="task99">Smith 10 steel bolts</label></div>
+    <div class="task"><input type="checkbox" id="task100"><label for="task100">Smith bronze platebodies to level 33 smithing</label></div>
+
+    <div class="task-category">Final Slayer Task</div>
+    <div class="task"><input type="checkbox" id="task101"><label for="task101">Complete a slayer task with mage</label></div>
+
+    <div class="task-category">League Points and Watching Streams</div>
+    <div class="task"><input type="checkbox" id="task102"><label for="task102">Watch Twitch streams for shooting star calls</label></div>
+    <div class="task"><input type="checkbox" id="task103"><label for="task103">Watch Twitch streams for crop circle in wheat calls</label></div>
+</div>
+
+
+    <!-- Continue adding tasks as needed -->
+</div>
+
+
+    <button class="reset-btn" onclick="resetTasks()">Reset All</button>
+</body>
+</html>

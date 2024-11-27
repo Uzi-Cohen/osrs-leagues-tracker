@@ -1,0 +1,129 @@
+/* General styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 20px;
+    background-image: url('https://i.redd.it/i1j82m3iz4ja1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #d4af37; /* OSRS gold text */
+}
+
+/* Main title styling */
+
+/* Task-category styling */
+.task-category {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d4af37;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    border: 1px solid #806517;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.task-category:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.task-category.completed {
+    text-decoration: line-through;
+    color: #808080; /* Gray for completed category */
+}
+
+/* Task styling */
+.task {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #806517;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.task:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.task.completed label {
+    text-decoration: line-through;
+    color: #808080; /* Gray for completed tasks */
+}
+
+/* Checkbox styling */
+.task input[type="checkbox"] {
+    display: none; /* Hide default checkbox */
+}
+
+.task label {
+    width: 100%; /* Ensure label covers the entire button */
+    cursor: pointer; /* Make clickable */
+}
+
+.task label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked + label:before {
+    background-color: #d4af37; /* OSRS gold */
+    background-image: url('https://runescape.wiki/images/2/2c/Tick.png'); /* RS tick mark */
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Reset button styling */
+.reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px black;
+}
+
+.reset-btn:hover {
+    background-color: #c79c27;
+}
+/* OSRS Title Styling */
+.osrs-title {
+    font-family: "Runescape UF", "Arial", sans-serif; /* Use a RuneScape-style font if available */
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 
+        2px 2px 0 #000, /* Black shadow for 3D effect */
+        -2px -2px 0 #806517, /* OSRS-style gold edging */
+        4px 4px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+/* Ensure font fallback if "Runescape UF" is unavailable */
+@font-face {
+    font-family: "Runescape UF";
+    src: url('https://static.runelite.net/fonts/Runescape-UF.ttf') format('truetype');
+}
